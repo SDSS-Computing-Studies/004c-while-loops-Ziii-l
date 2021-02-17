@@ -16,3 +16,16 @@ Example:
 10
 ...
 """
+
+#!python3
+import math
+import time
+targetNum = 20
+count = 0
+
+while targetNum == 20:
+    print(count)
+    time.sleep(0.1)
+    count = count+2 
+    if count > 20:
+        break
