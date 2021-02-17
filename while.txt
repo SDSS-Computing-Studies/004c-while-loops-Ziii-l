@@ -1,0 +1,11 @@
+
+
+you want to repeat something but 
+username:
+password:
+
+while (condition):
+    code
+    code
+    code
+
