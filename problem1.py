@@ -22,8 +22,8 @@ username = ""
 password =""
 guess = 0
 while username != "admin" or password != "12345" :
-    username=input("please enter username")
-    password=input("please enter password")
+    username=input("please enter username").strip()
+    password=input("please enter password").strip()
     if username != "admin" or password != "12345":
         print("Access denied")
         guess=guess+1
