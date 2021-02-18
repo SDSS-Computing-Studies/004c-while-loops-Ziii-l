@@ -22,8 +22,8 @@ import time
 count =int(input("Please enter a numbrer"))
 a=count
 while True:
-    print(count, end =" ", flush=True)
     time.sleep(0.1)
     count = a+count
+    print(count, end =" ", flush=True)
     if count > math.pow(a,12):
        break
