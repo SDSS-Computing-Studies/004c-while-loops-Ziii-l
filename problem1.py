@@ -20,12 +20,18 @@ Access denied
 import time
 username = ""
 password =""
-
-while username != "admin" and password != "12345" :
+guess = 0
+while username != "admin" or password != "12345" :
     username=input("please enter username")
     password=input("please enter password")
-    if username != "admin" and password != "12345":
+    if username != "admin" or password != "12345":
         print("Access denied")
-        if guess >3:
+        guess=guess+1
+        time.sleep(0.1)
+        if guess > 3:
             break
-print("Access granted")  
+    else:
+        print("Access granted")
+      
+
+ 
