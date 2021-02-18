@@ -17,3 +17,15 @@ outputs:
 Access granted
 Access denied
 """
+import time
+username = ""
+password =""
+
+while username != "admin" and password != "12345" :
+    username=input("please enter username")
+    password=input("please enter password")
+    if username != "admin" and password != "12345":
+        print("Access denied")
+        if guess >3:
+            break
+print("Access granted")  
