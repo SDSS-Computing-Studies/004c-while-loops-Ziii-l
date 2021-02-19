@@ -13,3 +13,18 @@ after the number in the sequence is greater than 100:
 Example:
 1 1 2 3 5 ...
 """
+import math
+import time
+
+count =int(input("Please enter a numbrer"))
+a = 1 
+while True:
+    print(1,count,end =" ", flush=True)
+    time.sleep(0.1)
+    count = a+count
+    if count > 100:
+       break
+
+
+
+
