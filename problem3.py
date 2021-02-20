@@ -16,15 +16,18 @@ Example:
 import math
 import time
 
-count =int(input("Please enter a numbrer"))
-a = 1 
-while True:
-    print(1,count,end =" ", flush=True)
-    time.sleep(0.1)
-    count = a+count
-    if count > 100:
-       break
 
+# nth is current number
+# ais the previous number
+# b is last number
 
-
-
+a=0
+b=1
+nth=a+b
+while nth< 100:
+    print( nth ,end=" ",flush=True)
+    nth = a + b
+    a = b
+    b = nth
+    if nth>100:
+        break
