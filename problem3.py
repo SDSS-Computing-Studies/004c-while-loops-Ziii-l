@@ -20,14 +20,15 @@ import time
 # nth is current number
 # ais the previous number
 # b is last number
-
-a=0
+nterms = int(input("How many terms? "))
+a=1
 b=1
-nth=a+b
-while nth< 100:
-    print( nth ,end=" ",flush=True)
+count = 0
+
+while count < nterms:
     nth = a + b
     a = b
     b = nth
-    if nth>100:
+    print( b,end=" ",flush=True)
+    if nth > 100:
         break
