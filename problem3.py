@@ -22,11 +22,16 @@ import time
 # b is last number
 a=0
 b=1
+print("1", end =" ", flush=True)
 nth=a+b
 while True: 
-    print( nth,end=" ",flush=True)
+   
     nth = a + b
     a = b
-    b = nth
+    b = nth 
+    print( nth,end=" ",flush=True)
     if nth > 100:
         break
+
+
+
